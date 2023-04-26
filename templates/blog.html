@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<!-- BLog Body -->
+
+
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-8">
+        <h1 class="mb-4">Latest Blog Posts</h1>
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">How to Improve Your Writing Skills</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo tincidunt ante vel aliquam. Suspendisse fringilla placerat mauris, a cursus mauris volutpat ac.</p>
+            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+          </div>
+          <div class="card-footer text-muted">
+            Posted on January 1, 2023 by John Doe
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">10 Tips for Working Remotely</h2>
+            <p class="card-text">Sed sed lobortis risus, quis sodales leo. Morbi eleifend, dolor eu commodo interdum, nulla ipsum aliquet est, in euismod ex augue at nulla.</p>
+            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+          </div>
+          <div class="card-footer text-muted">
+            Posted on December 15, 2022 by Jane Smith
+          </div>
+        </div>
+        <!-- Additional blog posts would be listed here -->
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">Categories</h2>
+            <ul class="list-group">
+              <li class="list-group-item"><a href="#">Business</a></li>
+              <li class="list-group-item"><a href="#">Technology</a></li>
+              <li class="list-group-item"><a href="#">Lifestyle</a></li>
+              <li class="list-group-item"><a href="#">Travel</a></li>
+              <li class="list-group-item"><a href="#">Food</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">Subscribe</h2>
+            <form>
+              <div class="form-group">
+                <label for="emailInput">Email address</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="Enter email">
+              </div>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<!--Blog ends here-->
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+    <!-- Body -->
+ <main>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>No of Weeks Left in Age</h1>
+                <form action = "/lifeinweeks" method = "post">
+           
+                    <div class="form-group mb-2">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="email">Enter your currant age in years</label>
+                        <input type="number" class="form-control" id="age" name="age" placeholder="Enter your age">
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                </form>
+
+                {% if success %}
+                    <h5>{{success}}</h5>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
+

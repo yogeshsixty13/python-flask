@@ -1,0 +1,21 @@
+{
+
+    "params" :
+    {
+        "local_server" : "True" ,
+        "local_uri" : "mysql://root:@127.0.0.1/flaskblog" ,
+        "prod_uri" : "mysql://root:@127.0.0.1/flaskblog"
+
+
+    },
+    "smtpconf" :
+    {
+        "mail_server" : "sandbox.smtp.mailtrap.io",
+        "mail_port" : 2525 ,
+        "mail_uname" : "939920d4e8bb17" ,
+        "mail_pwd" : "a87d4b11245182" ,
+        "mail_sender" : "flaskmail@gmail.com"
+
+    }
+
+}

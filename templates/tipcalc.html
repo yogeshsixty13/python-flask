@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+    <!-- Body -->
+ <main>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Tip Calculator</h1>
+                <form action = "/tipcalc" method = "post">
+           
+                    <div class="form-group mb-2">
+                        <label for="name">What is the total bill amount</label>
+                        <input type="number" class="form-control" id="billamount" name="billamount" placeholder="Enter bill amount">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="name">What % tip would you like to give</label>
+                        <input type="number" class="form-control" id="tippercentage" name="tippercentage" placeholder="Enter Tip Percentage">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="name">How many people to split the bill</label>
+                        <input type="number" class="form-control" id="people" name="people" placeholder="Enter No of people">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                </form>
+            </div>
+                <div class="col-md-6 mt-5">
+                {% if bill_amount ,tip_amount , bill_with_tip , success %}
+               
+                    <h5>{{bill_amount}}</h5>
+                    <h5> {{tip_amount}}</h5>
+                    <h5>{{bill_with_tip}}</h5>
+                    <h5>{{success}}</h5>
+              
+                {% endif %}
+                </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
+
